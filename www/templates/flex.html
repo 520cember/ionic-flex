@@ -1,0 +1,26 @@
+<!--
+  This template loads for the 'tab.friend-detail' state (app.js)
+  'friend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
+  The FriendsCtrl pulls data from the Friends service (service.js)
+  The Friends service returns an array of friend data
+-->
+<ion-view view-title="Flex">
+  <ion-header-bar align-title="center">
+    <div class="buttons">
+      <a class="button icon-left ion-ios-arrow-left button-positive button-clear" on-tap="goBack();"></a>
+    </div>
+    <h1 class="title">
+      flex
+    </h1>
+  </ion-header-bar>
+  <ion-content>
+    <p>flex 属性用于指定弹性子元素如何分配空间。</p>
+    <h4>语法</h4>
+    <p>flex：none | [ flex-grow ] || [ flex-shrink ] || [ flex-basis ]</p>
+    <div class="flex-container-flex">
+      <div class="flex-item-flex item1-flex">flex item 1</div>
+      <div class="flex-item-flex item2-flex">flex item 2</div>
+      <div class="flex-item-flex item3-flex">flex item 3</div>  
+    </div>
+  </ion-content>
+</ion-view>

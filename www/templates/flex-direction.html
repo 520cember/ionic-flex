@@ -1,0 +1,45 @@
+<!--
+  This template loads for the 'tab.friend-detail' state (app.js)
+  'friend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
+  The FriendsCtrl pulls data from the Friends service (service.js)
+  The Friends service returns an array of friend data
+-->
+<ion-view view-title="Flex-direction">
+  <ion-header-bar align-title="center">
+    <div class="buttons">
+      <a class="button icon-left ion-ios-arrow-left button-positive button-clear" on-tap="goBack();"></a>
+    </div>
+    <h1 class="title">
+      flex-direction
+    </h1>
+  </ion-header-bar>
+  <ion-content>
+    <p>flex-direction 顺序指定了弹性子元素在父容器中的位置。</p>
+    <h4>语法</h4>
+    <p>flex-direction: row | row-reverse | column | column-reverse</p>
+    <p>row：横向从左到右排列（左对齐），默认的排列方式。</p>
+    <div class="flex-container-direction-row">
+      <div class="flex-item">flex item 1</div>
+      <div class="flex-item">flex item 2</div>
+      <div class="flex-item">flex item 3</div>  
+    </div>
+    <p>row-reverse：反转横向排列（右对齐，从后往前排，最后一项排在最前面。</p>
+    <div class="flex-container-direction-row-reverse">
+      <div class="flex-item">flex item 1</div>
+      <div class="flex-item">flex item 2</div>
+      <div class="flex-item">flex item 3</div>  
+    </div>
+    <p>column：column：纵向排列。</p>
+    <div class="flex-container-direction-column">
+      <div class="flex-item">flex item 1</div>
+      <div class="flex-item">flex item 2</div>
+      <div class="flex-item">flex item 3</div>  
+    </div>
+    <p>column-reverse：反转纵向排列，从后往前排，最后一项排在最上面。</p>
+    <div class="flex-container-direction-column-reverse">
+      <div class="flex-item">flex item 1</div>
+      <div class="flex-item">flex item 2</div>
+      <div class="flex-item">flex item 3</div>  
+    </div>
+  </ion-content>
+</ion-view>

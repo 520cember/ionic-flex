@@ -1,0 +1,58 @@
+<!--
+  This template loads for the 'tab.friend-detail' state (app.js)
+  'friend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
+  The FriendsCtrl pulls data from the Friends service (service.js)
+  The Friends service returns an array of friend data
+-->
+<ion-view view-title="Calc">
+  <ion-header-bar align-title="center">
+    <div class="buttons">
+      <a class="button icon-left ion-ios-arrow-left button-positive button-clear" on-tap="goBack();"></a>
+    </div>
+    <h1 class="title">
+      计算器
+    </h1>
+  </ion-header-bar>
+  <ion-content>
+    <div class="content-calc">
+      <div class="layout-top">
+        <div class="screen">
+          {{data.screenData}}
+        </div>
+      </div>
+      <div class="layout-bottom">
+        <div class="btnGroup">
+          <div class="item-calc orange" on-tap="clickBtn(data.idc);">С</div>
+          <div class="item-calc orange" on-tap="clickBtn(data.idb);">←</div>
+          <div class="item-calc orange iconBtn" on-tap="clickBtn();">
+            <i class="ion-ios-clock-outline" style="font-size: 18px;"></i>
+          </div>
+          <div class="item-calc orange" on-tap="clickBtn(data.idadd);">＋</div>
+        </div>
+        <div class="btnGroup">
+          <div class="item-calc blue" on-tap="clickBtn(data.id9);">9</div>
+          <div class="item-calc blue" on-tap="clickBtn(data.id8);">8</div>
+          <div class="item-calc blue" on-tap="clickBtn(data.id7);">7</div>
+          <div class="item-calc orange" on-tap="clickBtn(data.idj);">－</div>
+        </div>
+        <div class="btnGroup">
+          <div class="item-calc blue" on-tap="clickBtn(data.id6);">6</div>
+          <div class="item-calc blue" on-tap="clickBtn(data.id5);">5</div>
+          <div class="item-calc blue" on-tap="clickBtn(data.id4);">4</div>
+          <div class="item-calc orange" on-tap="clickBtn(data.idx);">×</div>
+        </div>
+        <div class="btnGroup">
+          <div class="item-calc blue" on-tap="clickBtn(data.id3);">3</div>
+          <div class="item-calc blue" on-tap="clickBtn(data.id2);">2</div>
+          <div class="item-calc blue" on-tap="clickBtn(data.id1);">1</div>
+          <div class="item-calc orange" on-tap="clickBtn(data.iddiv);">&divide;</div>
+        </div>
+        <div class="btnGroup">
+          <div class="item-calc blue zero" on-tap="clickBtn(data.id0);">0</div>
+          <div class="item-calc blue" on-tap="clickBtn(data.idd);">.</div>
+          <div class="item-calc orange" on-tap="clickBtn(data.ide);">＝</div>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

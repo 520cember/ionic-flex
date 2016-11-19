@@ -1,0 +1,51 @@
+<!--
+  This template loads for the 'tab.friend-detail' state (app.js)
+  'friend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
+  The FriendsCtrl pulls data from the Friends service (service.js)
+  The Friends service returns an array of friend data
+-->
+<ion-view view-title="Align-items">
+  <ion-header-bar align-title="center">
+    <div class="buttons">
+      <a class="button icon-left ion-ios-arrow-left button-positive button-clear" on-tap="goBack();"></a>
+    </div>
+    <h1 class="title">
+      align-items
+    </h1>
+  </ion-header-bar>
+  <ion-content>
+    <p>align-items 设置或检索弹性盒子元素在侧轴（纵轴）方向上的对齐方式。</p>
+    <h4>语法</h4>
+    <p>align-items: flex-start | flex-end | center | baseline | stretch</p>
+    <p>stretch：如果指定侧轴大小的属性值为'auto'，则其值会使项目的边距盒的尺寸尽可能接近所在行的尺寸，但同时会遵照'min/max-width/height'属性的限制。</p>
+    <div class="flex-container-align-items-stretch">
+      <div class="flex-item-align-items">flex item 1</div>
+      <div class="flex-item-align-items">flex item 2</div>
+      <div class="flex-item-align-items">flex item 3</div>  
+    </div>
+    <p>flex-start：弹性盒子元素的侧轴（纵轴）起始位置的边界紧靠住该行的侧轴起始边界。</p>
+    <div class="flex-container-align-items-flex-start">
+      <div class="flex-item-align-items">flex item 1</div>
+      <div class="flex-item-align-items">flex item 2</div>
+      <div class="flex-item-align-items">flex item 3</div>  
+    </div>
+    <p>center：弹性盒子元素在该行的侧轴（纵轴）上居中放置。（如果该行的尺寸小于弹性盒子元素的尺寸，则会向两个方向溢出相同的长度）。</p>
+    <div class="flex-container-align-items-center">
+      <div class="flex-item-align-items">flex item 1</div>
+      <div class="flex-item-align-items">flex item 2</div>
+      <div class="flex-item-align-items">flex item 3</div>  
+    </div>
+    <p>flex-end：弹性盒子元素的侧轴（纵轴）起始位置的边界紧靠住该行的侧轴结束边界。</p>
+    <div class="flex-container-align-items-flex-end">
+      <div class="flex-item-align-items">flex item 1</div>
+      <div class="flex-item-align-items">flex item 2</div>
+      <div class="flex-item-align-items">flex item 3</div>  
+    </div>
+    <p>baseline：如弹性盒子元素的行内轴与侧轴为同一条，则该值与'flex-start'等效。其它情况下，该值将参与基线对齐。</p>
+    <div class="flex-container-align-items-baseline">
+      <div class="flex-item-align-items">flex item 1</div>
+      <div class="flex-item-align-items">flex item 2</div>
+      <div class="flex-item-align-items">flex item 3</div>  
+    </div>
+  </ion-content>
+</ion-view>

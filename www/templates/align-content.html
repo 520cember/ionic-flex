@@ -1,0 +1,57 @@
+<!--
+  This template loads for the 'tab.friend-detail' state (app.js)
+  'friend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
+  The FriendsCtrl pulls data from the Friends service (service.js)
+  The Friends service returns an array of friend data
+-->
+<ion-view view-title="Align-content">
+  <ion-header-bar align-title="center">
+    <div class="buttons">
+      <a class="button icon-left ion-ios-arrow-left button-positive button-clear" on-tap="goBack();"></a>
+    </div>
+    <h1 class="title">
+      align-content
+    </h1>
+  </ion-header-bar>
+  <ion-content>
+    <p>align-content 属性用于修改 flex-wrap 属性的行为。类似于 align-items, 但它不是设置弹性子元素的对齐，而是设置各个行的对齐。</p>
+    <h4>语法</h4>
+    <p>align-content: flex-start | flex-end | center | space-between | space-around | stretch</p>
+    <p>stretch - 默认。各行将会伸展以占用剩余的空间。</p>
+    <div class="flex-container-align-content-stretch">
+      <div class="flex-item-align-content">flex item 1</div>
+      <div class="flex-item-align-content">flex item 2</div>
+      <div class="flex-item-align-content">flex item 3</div>  
+    </div>
+    <p>flex-start - 各行向弹性盒容器的起始位置堆叠。</p>
+    <div class="flex-container-align-content-flex-start">
+      <div class="flex-item-align-content">flex item 1</div>
+      <div class="flex-item-align-content">flex item 2</div>
+      <div class="flex-item-align-content">flex item 3</div>  
+    </div>
+    <p>center -各行向弹性盒容器的中间位置堆叠。</p>
+    <div class="flex-container-align-content-center">
+      <div class="flex-item-align-content">flex item 1</div>
+      <div class="flex-item-align-content">flex item 2</div>
+      <div class="flex-item-align-content">flex item 3</div>  
+    </div>
+    <p>flex-end - 各行向弹性盒容器的结束位置堆叠。</p>
+    <div class="flex-container-align-content-flex-end">
+      <div class="flex-item-align-content">flex item 1</div>
+      <div class="flex-item-align-content">flex item 2</div>
+      <div class="flex-item-align-content">flex item 3</div>  
+    </div>
+    <p>space-between -各行在弹性盒容器中平均分布。</p>
+    <div class="flex-container-align-content-space-between">
+      <div class="flex-item-align-content">flex item 1</div>
+      <div class="flex-item-align-content">flex item 2</div>
+      <div class="flex-item-align-content">flex item 3</div>  
+    </div>
+    <p>space-around - 各行在弹性盒容器中平均分布，两端保留子元素与子元素之间间距大小的一半。</p>
+    <div class="flex-container-align-content-space-around">
+      <div class="flex-item-align-content">flex item 1</div>
+      <div class="flex-item-align-content">flex item 2</div>
+      <div class="flex-item-align-content">flex item 3</div>  
+    </div>
+  </ion-content>
+</ion-view>

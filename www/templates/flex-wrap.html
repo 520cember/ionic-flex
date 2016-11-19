@@ -1,0 +1,39 @@
+<!--
+  This template loads for the 'tab.friend-detail' state (app.js)
+  'friend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
+  The FriendsCtrl pulls data from the Friends service (service.js)
+  The Friends service returns an array of friend data
+-->
+<ion-view view-title="Flex-wrap">
+  <ion-header-bar align-title="center">
+    <div class="buttons">
+      <a class="button icon-left ion-ios-arrow-left button-positive button-clear" on-tap="goBack();"></a>
+    </div>
+    <h1 class="title">
+      flex-wrap
+    </h1>
+  </ion-header-bar>
+  <ion-content>
+    <p>flex-wrap 属性用于指定弹性盒子的子元素换行方式。</p>
+    <h4>语法</h4>
+    <p>flex-flow: nowrap | wrap |  wrap-reverse</p>
+    <p>nowrap - 默认， 弹性容器为单行。该情况下弹性子项可能会溢出容器。</p>
+    <div class="flex-container-nowrap">
+      <div class="flex-item">flex item 1</div>
+      <div class="flex-item">flex item 2</div>
+      <div class="flex-item">flex item 3</div>  
+    </div>
+    <p>wrap - 弹性容器为多行。该情况下弹性子项溢出的部分会被放置到新行，子项内部会发生断行。</p>
+    <div class="flex-container-wrap">
+      <div class="flex-item">flex item 1</div>
+      <div class="flex-item">flex item 2</div>
+      <div class="flex-item">flex item 3</div>  
+    </div>
+    <p>wrap-reverse -反转 wrap 排列。</p>
+    <div class="flex-container-wrap-reverse">
+      <div class="flex-item">flex item 1</div>
+      <div class="flex-item">flex item 2</div>
+      <div class="flex-item">flex item 3</div>  
+    </div>
+  </ion-content>
+</ion-view>

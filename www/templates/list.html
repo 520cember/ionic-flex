@@ -1,0 +1,75 @@
+<!--
+  This template loads for the 'tab.friend-detail' state (app.js)
+  'friend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
+  The FriendsCtrl pulls data from the Friends service (service.js)
+  The Friends service returns an array of friend data
+-->
+<ion-view view-title="Attribute list">
+  <ion-header-bar align-title="center">
+    <div class="buttons">
+      <a class="button icon-left ion-ios-arrow-left button-positive button-clear" on-tap="goBack();"></a>
+    </div>
+    <h1 class="title">
+      list
+    </h1>
+  </ion-header-bar>
+  <ion-content>
+    <div class="list" style="margin-top: 10px;">
+
+      <a class="item item-icon-right" on-tap="goDisplay();">
+        display
+        <i class="icon ion-ios-arrow-right" style="color: gray;"></i>
+      </a>
+
+      <a class="item item-icon-right" on-tap="goFlex_direction();">
+        flex-direction
+        <i class="icon ion-ios-arrow-right" style="color: gray;"></i>
+      </a>
+
+      <a class="item item-icon-right" on-tap="goJustify_content();">
+        justify-content
+        <i class="icon ion-ios-arrow-right" style="color: gray;"></i>
+      </a>
+
+      <a class="item item-icon-right" on-tap="goAlign_items();">
+        align-items
+        <i class="icon ion-ios-arrow-right" style="color: gray;"></i>
+      </a>
+
+      <a class="item item-icon-right" on-tap="goflex_wrap();">
+        flex-wrap
+        <i class="icon ion-ios-arrow-right" style="color: gray;"></i>
+      </a>
+
+      <a class="item item-icon-right" on-tap="goAlign_content();">
+        align-content
+        <i class="icon ion-ios-arrow-right" style="color: gray;"></i>
+      </a>
+
+      <a class="item item-icon-right" on-tap="goFlex_flow();">
+        flex-flow
+        <i class="icon ion-ios-arrow-right" style="color: gray;"></i>
+      </a>
+
+      <a class="item item-icon-right" on-tap="goOrder();">
+        order
+        <i class="icon ion-ios-arrow-right" style="color: gray;"></i>
+      </a>
+
+      <a class="item item-icon-right" on-tap="goAlign_self();">
+        align-self
+        <i class="icon ion-ios-arrow-right" style="color: gray;"></i>
+      </a>
+
+      <a class="item item-icon-right" on-tap="goFlex();">
+        flex
+        <i class="icon ion-ios-arrow-right" style="color: gray;"></i>
+      </a>
+
+      <a class="item item-icon-right" on-tap="goCalc();">
+        calc
+        <i class="icon ion-ios-arrow-right" style="color: gray;"></i>
+      </a>
+    </div>
+  </ion-content>
+</ion-view>
