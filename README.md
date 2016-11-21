@@ -9,6 +9,6 @@ ionic中使用flex布局
 
 最新技术福利
 
-React Native 1-50集视频免费下载地址： 百度云盘链接: http://pan.baidu.com/s/1nvKyy7n 提取码: dukv
+React Native 1-30集视频免费下载地址： 百度云盘链接: http://pan.baidu.com/s/1nvKyy7n 提取码: dukv
 
 更多视频教程及源码请关注微信公众号sports17520，回复“RN视频教程”领取。
