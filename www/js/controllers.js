@@ -43,8 +43,11 @@ angular.module('starter.controllers', [])
   $scope.goCalc = function(){
     $state.go('calc');
   };
-  $scope.goBack = function(){
-    $state.go('main');
+  $scope.goCalc = function(){
+    $state.go('calc');
+  };
+  $scope.goExpress = function(){
+    $state.go('express');
   };
 })
 
@@ -105,6 +108,131 @@ angular.module('starter.controllers', [])
 .controller('Flex-flowCtrl', function($scope, $state) {
   $scope.goBack = function(){
     $state.go('list');
+  };
+})
+
+.controller('ExpressCtrl', function($scope, $state, $http, $ionicActionSheet, $timeout) {
+  $scope.items = [];
+  $scope.goBack = function(){
+    $state.go('list');
+  };
+
+  $scope.companyNo = '请选择快递公司';
+
+  $scope.show = function() {
+    var hideSheet = $ionicActionSheet.show({
+        buttons: [
+          { text: '<b>申通</b>' },
+          { text: '<b>EMS</b>' },
+          { text: '<b>顺丰</b>' },
+          { text: '<b>圆通</b>' },
+          { text: '<b>中通</b>' },
+          { text: '<b>韵达</b>' },
+          { text: '<b>天天</b>' },
+          { text: '<b>汇通</b>' },
+          { text: '<b>全峰</b>' },
+          { text: '<b>德邦</b>' },
+          { text: '<b>宅急送</b>' }
+        ],
+        titleText: '选择快递公司',
+        cancelText: '取消',
+        cancel: function() {
+          $scope.companyNo = '请选择快递公司';
+          // add cancel code..
+        },
+        buttonClicked: function(index) {
+          // ps:快递公司编码:申通="shentong" EMS="ems" 顺丰="shunfeng" 圆通="yuantong" 中通="zhongtong" 韵达="yunda" 天天="tiantian" 汇通="huitongkuaidi" 全峰="quanfengkuaidi" 德邦="debangwuliu" 宅急送="zhaijisong"
+          switch(index)
+          {
+          case 0:
+            $scope.companyNo = '申通';
+            break;
+          case 1:
+            $scope.companyNo = 'EMS';
+            break;
+          case 2:
+            $scope.companyNo = '顺丰';
+            break;
+          case 3:
+            $scope.companyNo = '圆通';
+            break;
+          case 4:
+            $scope.companyNo = '中通';
+            break;
+          case 5:
+            $scope.companyNo = '韵达';
+            break;
+          case 6:
+            $scope.companyNo = '天天';
+            break;
+          case 7:
+            $scope.companyNo = '汇通';
+            break;
+          case 8:
+            $scope.companyNo = '全峰';
+            break;
+          case 9:
+            $scope.companyNo = '德邦';
+            break;
+          case 10:
+            $scope.companyNo = '宅急送';
+            break;
+          default:
+            $scope.companyNo = "";
+          }
+          return true;
+        }
+    });
+};  
+
+  // shentong&postid=3317899668939
+  $scope.search = function(companyNo,expressNo){
+    // ps:快递公司编码:申通="shentong" EMS="ems" 顺丰="shunfeng" 圆通="yuantong" 中通="zhongtong" 韵达="yunda" 天天="tiantian" 汇通="huitongkuaidi" 全峰="quanfengkuaidi" 德邦="debangwuliu" 宅急送="zhaijisong"
+    var company = "";
+    switch(companyNo)
+    {
+    case '申通':
+      company = 'shentong';
+      break;
+    case 'EMS':
+      company = 'ems';
+      break;
+    case '顺丰':
+      company = 'shunfeng';
+      break;
+    case '圆通':
+      company = 'yuantong';
+      break;
+    case '中通':
+      company = 'zhongtong';
+      break;
+    case '韵达':
+      company = 'yunda';
+      break;
+    case '天天':
+      company = 'tiantian';
+      break;
+    case '汇通':
+      company = 'huitongkuaidi';
+      break;
+    case '全峰':
+      company = 'quanfengkuaidi';
+      break;
+    case '德邦':
+      company = 'debangwuliu';
+      break;
+    case '宅急送':
+      company = 'zhaijisong';
+      break;
+    default:
+      company = "";
+    }
+    var url = "http://www.kuaidi100.com/query?type=" + company + "&postid=" + 3317899668939;
+    $http.get(url)
+    .success(function (result) {
+      $scope.items = result.data;
+      $scope.message = result.message;
+    });
   };
 })
 

@@ -109,6 +109,12 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     controller: 'CalcCtrl'
   })
 
+  .state('express', {
+    url: '/express',
+    templateUrl: 'templates/express.html',
+    controller: 'ExpressCtrl'
+  })
+
   ;
 
   // if none of the above states are matched, use this as the fallback
