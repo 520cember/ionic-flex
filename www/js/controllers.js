@@ -49,6 +49,9 @@ angular.module('starter.controllers', [])
   $scope.goExpress = function(){
     $state.go('express');
   };
+  $scope.goBack = function(){
+    $state.go('main');
+  };
 })
 
 .controller('DisplayCtrl', function($scope, $state) {
@@ -117,7 +120,7 @@ angular.module('starter.controllers', [])
     $state.go('list');
   };
 
-  $scope.companyNo = '请选择快递公司';
+  $scope.companyNo = '';
 
   $scope.show = function() {
     var hideSheet = $ionicActionSheet.show({
@@ -137,7 +140,7 @@ angular.module('starter.controllers', [])
         titleText: '选择快递公司',
         cancelText: '取消',
         cancel: function() {
-          $scope.companyNo = '请选择快递公司';
+          $scope.companyNo = '';
           // add cancel code..
         },
         buttonClicked: function(index) {

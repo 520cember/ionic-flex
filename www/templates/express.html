@@ -16,12 +16,12 @@
   <ion-content class="has-header padding">
     <label  class="item item-input item-icon-right" ng-click="show();">
       <span class="input-label">快递公司：</span>
-      <input type="text" ng-model="companyNo">
+      <input type="text" style="backgroud:white;" ng-model="companyNo" placeholder="请选择快递公司">
       <i class="icon ion-ios-arrow-down"></i>
     </label>
     <label  class="item item-input">
       <span class="input-label">快递单号：</span>
-      <input type="text" ng-model="expressNo">
+      <input type="text" ng-model="expressNo" placeholder="请输入快递单号">
     </label>
     <button class="button button-positive button-block" on-tap="search(companyNo,expressNo);" style="margin-top:30px;">
       查询
