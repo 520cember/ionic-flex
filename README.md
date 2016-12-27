@@ -16,16 +16,26 @@ ionic-flex
 
 ### 项目截图:
 
-<img src="https://github.com/Alex-0407/ionic-flex/blob/master/www/img/1.PNG" width="320px" style="display:inline;">
+<img src="https://github.com/Alex-0407/ionic-flex/blob/master/www/img/1.PNG" width="320px" style="display:inline;">  
 <img src="https://github.com/Alex-0407/ionic-flex/blob/master/www/img/2.PNG" width="320px" style="display:inline;">
-<img src="https://github.com/Alex-0407/ionic-flex/blob/master/www/img/3.PNG" width="320px" style="display:inline;">
 
+<img src="https://github.com/Alex-0407/ionic-flex/blob/master/www/img/3.PNG" width="320px" style="display:inline;">  
 <img src="https://github.com/Alex-0407/ionic-flex/blob/master/www/img/4.PNG" width="320px" style="display:inline;">
-<img src="https://github.com/Alex-0407/ionic-flex/blob/master/www/img/5.PNG" width="320px" style="display:inline;">
+
+<img src="https://github.com/Alex-0407/ionic-flex/blob/master/www/img/5.PNG" width="320px" style="display:inline;">  
 <img src="https://github.com/Alex-0407/ionic-flex/blob/master/www/img/6.PNG" width="320px" style="display:inline;">
 
+<img src="https://github.com/Alex-0407/ionic-flex/blob/master/www/img/7.PNG" width="320px" style="display:inline;">  
+<img src="https://github.com/Alex-0407/ionic-flex/blob/master/www/img/8.PNG" width="320px" style="display:inline;">
+
+<img src="https://github.com/Alex-0407/ionic-flex/blob/master/www/img/9.PNG" width="320px" style="display:inline;">  
+<img src="https://github.com/Alex-0407/ionic-flex/blob/master/www/img/10.PNG" width="320px" style="display:inline;">
+
+<img src="https://github.com/Alex-0407/ionic-flex/blob/master/www/img/11.PNG" width="320px" style="display:inline;">  
+<img src="https://github.com/Alex-0407/ionic-flex/blob/master/www/img/12.PNG" width="320px" style="display:inline;">
+
 ### 项目地址
-https://github.com/Alex-0407/ionic-tabs
+https://github.com/Alex-0407/ionic-flex
 
 新浪云平台Sina App Engine(SAE)，是由新浪公司开发和运营的开放云计算平台的核心组成部分，国内第一家公有云计算平台，可以为网站开发者，App开发者提供稳定、快捷、透明、可控的服务化的平台，并且减少开发者的开发和维护成本。
 
