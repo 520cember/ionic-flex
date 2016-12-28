@@ -45,6 +45,6 @@ https://github.com/Alex-0407/ionic-flex
 
 最新技术福利
 
-React Native 0-11集视频免费下载地址： 百度云盘链接: https://pan.baidu.com/s/1o8CqWwq 提取码: dukv
+React Native 0-11集视频免费下载地址： 百度云盘链接: 链接: https://pan.baidu.com/s/1boPUy9D 密码: cbb8
 
 更多视频教程及源码请关注微信公众号sports17520，回复“RN视频教程”领取。
