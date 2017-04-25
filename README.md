@@ -14,7 +14,7 @@ ionic-flex
 3. `npm install`
 4. run `ionic serve` from a terminal
 
-### 项目预览
+### 效果预览
 
 ![动态图](https://github.com/Alex-0407/ionic-flex/blob/master/www/img/flex.gif?raw=true)
 
