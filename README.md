@@ -14,25 +14,10 @@ ionic-flex
 3. `npm install`
 4. run `ionic serve` from a terminal
 
-### 项目截图:
+### 项目预览
 
-<img src="https://github.com/Alex-0407/ionic-flex/blob/master/www/img/1.PNG" width="320px" style="display:inline;">
-<img src="https://github.com/Alex-0407/ionic-flex/blob/master/www/img/2.PNG" width="320px" style="display:inline;">
+![动态图](https://github.com/Alex-0407/ionic-flex/blob/master/www/img/flex.gif?raw=true)
 
-<img src="https://github.com/Alex-0407/ionic-flex/blob/master/www/img/3.PNG" width="320px" style="display:inline;">
-<img src="https://github.com/Alex-0407/ionic-flex/blob/master/www/img/4.PNG" width="320px" style="display:inline;">
-
-<img src="https://github.com/Alex-0407/ionic-flex/blob/master/www/img/5.PNG" width="320px" style="display:inline;">
-<img src="https://github.com/Alex-0407/ionic-flex/blob/master/www/img/6.PNG" width="320px" style="display:inline;">
-
-<img src="https://github.com/Alex-0407/ionic-flex/blob/master/www/img/7.PNG" width="320px" style="display:inline;">
-<img src="https://github.com/Alex-0407/ionic-flex/blob/master/www/img/8.PNG" width="320px" style="display:inline;">
-
-<img src="https://github.com/Alex-0407/ionic-flex/blob/master/www/img/9.PNG" width="320px" style="display:inline;">
-<img src="https://github.com/Alex-0407/ionic-flex/blob/master/www/img/10.PNG" width="320px" style="display:inline;">
-
-<img src="https://github.com/Alex-0407/ionic-flex/blob/master/www/img/11.PNG" width="320px" style="display:inline;">
-<img src="https://github.com/Alex-0407/ionic-flex/blob/master/www/img/12.PNG" width="320px" style="display:inline;">
 
 ### 项目地址
 https://github.com/Alex-0407/ionic-flex
